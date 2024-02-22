@@ -1,0 +1,35 @@
+version: '2.4'
+
+networks:
+  database:
+    name: database-dev-net
+
+services:
+
+  db:
+    image: library/mysql:5.7.25
+    restart: on-failure
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_USER: 'test'
+      MYSQL_PASSWORD: 'test'
+      MYSQL_DATABASE: 'test_database'
+    healthcheck:
+      test: [ "CMD", "mysql", "--user=root", "--password=root", "-e", "SHOW DATABASES;" ]
+      interval: 15s
+      timeout: 30s
+      retries: 30
+    ports:
+      - "127.0.0.1:3306:3306"
+    networks:
+      - database
+
+  adminer:
+    image: adminer:latest
+    restart: on-failure
+    links:
+      - db
+    ports:
+      - "127.0.0.1:8000:8080"
+    networks:
+      - database
