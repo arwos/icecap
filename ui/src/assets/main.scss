@@ -1,16 +1,8 @@
-@import "@onega-ui/icons";
-@import "@onega-ui/styles";
-@import 'base';
-
-body{
-  background-color: var(--ong-color-secondary-bg);
+body {
+  padding: 10px;
 }
 
-.shadow {
-  box-shadow: 0 0 5px 0 var(--ong-color-dark-bg);
-}
-
-.btn{
+.btn {
   align-items: center;
   display: flex;
 }

@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import type { ISPModel } from '@/components/oauth/types'
+import type { TProvider } from '@/login/types'
 
-defineProps<ISPModel>()
+const props = defineProps<TProvider>()
 </script>
 
 <template>
-  <a class="btn btn-secondary" :href="url">
-    <img :src="icon" alt="" class="logo">
-    <span class="ml-1">{{ title }}</span>
+  <a class="btn btn-light" :href="props.url">
+    <img :src="props.icon" alt="" class="logo" />
+    <span class="ml-1">{{ props.title }}</span>
   </a>
 </template>
 

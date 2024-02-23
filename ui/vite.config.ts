@@ -21,13 +21,13 @@ export default defineConfig({
     modulePreload: true,
     rollupOptions: {
       input: {
-        oauthLogin: fileURLToPath(new URL('./src/apps/oauth-login/index.html', import.meta.url)),
-        userInfo: fileURLToPath(new URL('./src/apps/user-info/index.html', import.meta.url)),
+        oauthLogin: fileURLToPath(new URL('./src/login/index.html', import.meta.url)),
+        userInfo: fileURLToPath(new URL('./src/profile/index.html', import.meta.url))
       },
       output: {
         dir: 'dist',
         format: 'es',
-        strict: true,
+        strict: true
       }
     }
   }

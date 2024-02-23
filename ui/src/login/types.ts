@@ -1,4 +1,4 @@
-export interface ISPModel {
+export interface TProvider {
   code: string,
   title: string,
   icon: string,

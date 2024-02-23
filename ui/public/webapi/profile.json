@@ -1,0 +1,27 @@
+[
+  {
+    "field": "name",
+    "type": "text",
+    "title": "User Name",
+    "value": "demo"
+  },
+  {
+    "field": "login",
+    "type": "input",
+    "title": "Login",
+    "value": "demo"
+  },
+  {
+    "field": "email",
+    "type": "input",
+    "title": "E-Mail",
+    "value": "demo@demo.ru"
+  },
+  {
+    "field": "lang",
+    "type": "select",
+    "title": "Lang",
+    "value": "ru",
+    "data": ["ru", "en", "ar"]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "code": "google",
+    "title": "Google",
+    "icon": "/logos/google_36px.svg",
+    "url": "/api/oauth/google/request/v1"
+  },
+  {
+    "code": "yandex",
+    "title": "Yandex ID",
+    "icon": "/logos/yandex_44px.svg",
+    "url": "/api/oauth/yandex/request/v1"
+  },
+  {
+    "code": "yandex",
+    "title": "Yandex ID",
+    "icon": "/logos/yandex_44px.svg",
+    "url": "/api/oauth/yandex/request/v1"
+  },
+  {
+    "code": "yandex",
+    "title": "Yandex ID",
+    "icon": "/logos/yandex_44px.svg",
+    "url": "/api/oauth/yandex/request/v1"
+  },
+  {
+    "code": "yandex",
+    "title": "Yandex ID",
+    "icon": "/logos/yandex_44px.svg",
+    "url": "/api/oauth/yandex/request/v1"
+  }
+]

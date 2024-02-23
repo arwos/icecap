@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import ISPList from '@/components/oauth/ISPList.vue'
+import ProvidersForm from '@/login/ProvidersForm.vue'
 </script>
 
 <template>
   <Suspense>
     <template #default>
-      <aside class="box box-light area shadow">
-        <ISPList />
+      <aside class="bq bq-success area">
+        <ProvidersForm />
       </aside>
     </template>
 
     <template #fallback>
-      <aside class="box box-light area shadow">
+      <aside class="bq bq-light area">
         <div>Loading...</div>
       </aside>
     </template>
@@ -21,6 +21,5 @@ import ISPList from '@/components/oauth/ISPList.vue'
 <style scoped lang="scss">
 aside {
   margin-top: 20vh;
-  border-radius: var(--ong-radius-size) !important;
 }
 </style>
